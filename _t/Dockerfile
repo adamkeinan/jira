@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.18.3
 RUN apk --update add openjdk8-jre curl screen && \
     curl -s -L https://marketplace.atlassian.com/download/plugins/atlassian-plugin-sdk-tgz | tar xzf - && \
     ln -s /atlassian* /atlassian
